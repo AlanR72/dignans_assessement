@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dignans Confirmation Page</title>
+    <!-- Link to main stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Link to 'confirmation page' stylesheet -->
+    <link rel="stylesheet" href="/css/confirmation.css">
+    <!--Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Start of navigation as on index page-->
+    <nav>
+        <div class="nav-container">
+            <div class="dignans-logo">
+                <a id="logo" href="/"><img src="/media/dignanlogo1.png" alt="Dignans Logo"></a>
+            </div>
+            <!-- Navigation displays row for large devices toggled to column using css and js -->
+            <ul id="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cafe.html">Cafe</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <!-- Hamburger menu which is hidden for larger devices -->
+        <div id="mobile-click" class="hamburger">&#8801</div>
+    </nav>
+    <main>
+        <!-- Section containing confirmation messages -->
+        <section class="wrapper">
+            
+                <h1>Confirmation</h1>
+                
+                    <h3>Your Info</h3>
+                    <!-- Spans display data retreived from contact page form using id's and javascript page 'return_data.js' -->
+                    <p>Thank you for getting in touch <span class="stored_info" id="storedName"></span></p>
+                    <p>We will be in touch via email to <span class="stored_info" id="storedEmail"></span></p>
+                    <p>The telephone number we have is <span class="stored_info" id="storedTelno"></span></p>
+                    <p>Here is a copy of your message:</p>
+                    <p><span class="stored_info" id="storedMessage"></span></p>
+        </section>      
+            
+        
+    </main>
+    
+</body>
+<!--Link to javascript file for toggle of mobile and desktop views-->
+<script src="/js/main.js"></script>
+<!-- Link to javascript validating stored data  -->
+<script src="/js/return_data.js"></script>
+<!--Start of footer section-->
+<footer>
+    <!--Wrapper for footer divs to display flex-->
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="/"><img src='/media/dignanlogo1.png'></a>
+        </div>
+        <!--Unordered list to display contact options-->
+        <div class="contact-details">
+            <ul>
+                <li><a href="tel:+441412237840"><i class="fa-solid fa-phone"><span>    01412237840</span></i></a></li>
+                <li><a href="mailto:info@dignans.com"><i class="fa regular fa-envelope"></i><span>    info@dignans.com</span></a></li>
+                <li><a href="https://wa.me/+447776431307"><i class="fa-brands fa-whatsapp"></i><span>    Send WhatsApp message</span></a></li>
+                <li><a href="sms:+447776431307"><i class="fa-solid fa-mobile-screen"></i><span>    Send text message</span></a></li>
+            </ul>
+        </div>
+        <!--Unordered list to return to homepage and display sitemap, t&c's and privacy-->
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="sitemap.xml">Sitemap</a></li>
+            </ul>
+        </div>
+        <!--Links to social media-->
+        <div class="social-media-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+<!--Copyright display at bottom of page-->
+<div class="copyright-bottom">&copy; 2024 Dignans Catering</div>
+</html>

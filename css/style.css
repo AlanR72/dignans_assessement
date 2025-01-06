@@ -1,0 +1,296 @@
+/* Styling for navigation and footer on all pages */
+/* Styling for index page */
+
+/* CSS reset to remove default settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Root styling for text on all pages */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Styling for navigation container */
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    position: sticky;
+    background-color: #333126;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    display: none;/*display none made visible with media query*/
+}
+
+/* Styling for mobile navigation */
+nav ul li{
+    border-bottom: 3px solid #F89F0F;
+    font-size: 1em;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+}
+/* CSS targeting div images to fill container */
+div a img{
+    height: 100%;
+}
+
+/*positioning for hamburger icon*/
+.hamburger{
+    position: absolute;
+    right: 50px;
+    color:#F89F0F;
+    font-size: 3em;
+    cursor: pointer;
+    padding-top: 20px;
+}
+/* Apply flex to logo to avoid overlapping */
+.dignans-logo{
+    display: flex;
+    
+}
+/*code linked to javascript for click of hamburger*/
+.active{
+    position: fixed;
+    height: 85vh;
+    display: flex;
+    top: 15vh;
+    width: 100%;
+    background-color: #333126;
+    font-size: 10px;
+}
+
+/* Remove anchor underline on hover and colour of text */
+a{
+    text-decoration: none;
+    color: #F89F0F;
+    font-size: 2em;
+}
+/* Styling to contain navigation list height */
+#mobile-nav{
+    height:100%;
+}
+/* Style for navigation hyperlinks */
+#mobile-nav a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+/* Code to change nav color on hover and change when on current page */
+nav a:hover, .current{
+    background-color: #f89f0f;
+    color: #333126;
+}
+
+/* Small piece of code to prevent background showing through on hover */
+.dignans-logo a:hover{
+    background-color: #333126;
+}
+
+/* Styling for navigation container div */
+.nav-container{
+    width: 100%;
+    display: flex;
+    
+}
+/* Background image for index page header */
+.header{
+    background-image: url(../media/main3.jpg);
+    display: flex;
+    width: 100%;
+    height: 86vh;
+    background-size: cover;
+    background-position: center;
+    align-items:flex-end;
+}
+/* Styling for heading on index page */
+.header-title{
+    font-size: 3em;
+    color:#F89F0F;
+    padding: 10px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Container for div with welcome message */
+.message_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for welcome message */
+.welcome_message{
+    background-color: #F89F0F;
+    border: #333126 solid 3px;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+/* Styling to float text around image and space for improved reading */
+.welcome_message img{
+    width: 40%;
+    display: flex;
+    border: #333126 solid 3px;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: right;
+    margin-top: 5%;;
+}
+
+
+/* Styling for row of 4 images on index page */
+.welcome_images img{
+    width: 21%;
+    margin: 2%;
+    margin-top: 7%;;
+}
+
+
+/* Style for footer container div */
+.footer-container{
+    background-color: #333126;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+
+/* Styling for footer contact options */
+.contact-details{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 8px;
+}
+/* Styling for footer navigation */
+.footer-nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 8px;
+}
+/* Styling for social media icons */
+.social-media-icons{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+/* Removes list styling and adds spacing to bottom */
+footer ul li{
+    list-style: none;
+    padding-bottom: 2%;
+}
+/* Styling to change color of footer hovers to help distinguish selection */
+footer ul li a:hover{
+    background-color: #F89F0F;
+    color: #333126;
+}
+footer{
+    position: sticky;
+}
+/* Styling for copyright message at bottom of all pages */
+.copyright-bottom{
+    width: 100%;
+    background-color: #F89F0F;
+    color:#333126;
+    font-weight: bold;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 991px){
+   /* Changes navigation direction display for larger devices */
+    nav ul{
+        display: contents;
+        display: flex;
+        flex-direction: row;
+    }
+    /* Navigation styling for larger devices */
+    nav ul li{
+       border: none;
+       text-align: center;
+       width: 18%;
+       height: 100%;
+       font-size: 10px;
+    }
+    /* Removes hamburger icon for larger devices */
+    .hamburger{
+        display: none;
+    }
+    /* Styling to change direction of footer on larger devices */
+    .footer-container{
+        background-color: #333126;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-details{
+        text-align: left;
+    }
+    .footer-nav{
+        text-align: left;
+    }
+    .welcome_message{
+        font-size: 1.5em;
+    }
+}
+/* Styling for desktop */
+@media only screen and (min-width: 1080px){
+    .active{
+        position: fixed;
+        height: unset;
+    }
+    nav  ul li{
+        width: 18%;
+    }
+    .header-title{
+        font-size: 3em;
+    }
+}
+
+/*Style for very narrow devices*/
+@media only screen and (min-width: 300px){
+    .dignans-logo{
+        height: 75%;
+        margin-top: 15px;
+    }
+}
+
+
+

@@ -1,0 +1,174 @@
+/* Additional styling for cafe page */
+
+
+/* Backgroung image for page */
+main{
+    background-image: url(/media/cafepic1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+/* First 2 divs contained in section to display as row for large devices via media query */
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Styling for pricelist container div */
+.table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #333126;
+    border: #f89f0f solid 3px;
+    color: #f89f0f;
+    margin: 5%;
+}
+/* Styling for coffee pricelist */
+.table1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+/* Styling for coffee pricelist image */
+.table1 img{
+    display: flex;
+    border: solid 3px #f89f0f;
+    margin-right: 3%;
+}
+/* Styling for lunch pricelist */
+.table2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+/* Styling for lunch pricelist image */
+.table2 img{
+    display: flex;
+    border: solid 3px #f89f0f;
+    margin-left: 3%;
+}
+/* Styling for hot food pricelist */
+.table3{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+/* Styling for hot food pricelist image */
+.table3 img{
+    display: flex;
+    border: solid 3px #f89f0f;
+    margin-right: 3%;
+}
+/* Styling for table headings in second div */
+th{
+    text-align: left;
+    padding-bottom: 4%;
+}
+
+/* Styling container for first div with paragraph of info */
+.cafe-paragraph{
+    border: 3px solid #f89f0f;
+    width: 90%;
+    background-color: #333126;
+    color: #f89f0f;
+    margin: 5%;
+    padding: 3%;
+    text-align: justify;
+  
+}
+/* Styling for first div image */
+.cafe-paragraph img{
+    display: flex;
+}
+/* Styling for images of cafe exterior */
+.cafe1{
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 40%;
+    border: #f89f0f solid 3px;
+}
+/* Styling for images of cafe interior*/
+.cafe2{
+    float: left;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 40%;
+    border: #f89f0f solid 3px;
+}
+/* Spacing for pricelist headings */
+h2{
+    margin-top: 5%;
+    padding-bottom: 10%;
+}
+/* Spacing for address */
+.address{
+    margin-top: 5%;
+    margin-left: 50%;
+    text-align: left;
+}
+/* Styling for map */
+iframe{
+    margin-top:9%;
+    margin-left: 5%;
+}
+/* Styling for delivery message at bottom of first div */
+.delivery-message{
+    text-align: center;
+    padding-top: 10%;
+}
+/* Allow space below address heading */
+.address h3{
+    padding-bottom: 5%;
+    width: 100%;
+}
+/* Styling for 3rd div container to ensure full coverage of background image */
+.section2{
+    padding-bottom: 5%;
+}
+/* Styling for opening hours div */
+.opening_hours{
+    border: 3px solid #f89f0f;
+    width: 90%;
+    background-color: #333126;
+    color: #f89f0f;
+    margin: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+/* Styling for spacing and decoration of list items */
+.opening_hours li{
+    list-style: none;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+/* Styling for larger devices */
+@media only screen and (min-width: 991px){
+    /* First 2 divs display as row for large devices */
+    .section1{
+        font-size: 1.2em;
+        flex-direction: row;
+    }
+    /* Allows third div to display center */
+    .section2{
+        display: flex;
+        justify-content: center;
+    }
+    /* Larger devices font size and width */
+    .opening_hours{
+        font-size: 1.5em;
+        width: 50%;
+    }
+    /* Specific sizing for iframe on large devices */
+    iframe{
+        width: 150px;
+        height: 198px;
+    }
+   
+}

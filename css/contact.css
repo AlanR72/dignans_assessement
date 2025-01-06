@@ -1,0 +1,98 @@
+/* Additional styling for contact page */
+
+/* Styling for background image and main contents */
+main{
+    background-image: url(/media/fork-and-pasta1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for heading */
+h1{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333126;
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Form styling */
+.form-wrapper{
+    display: flex;
+    background-color: #F89F0F;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 400px;;
+    width: 85%;
+}
+
+/* Form labels styling */
+label{
+    font-size: 20px;
+    padding: 4%;
+    margin-left: 2%;
+}
+/* Input box styling */
+input{
+    font-size: 20px;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+}
+/* Message input area styling */
+textarea{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+/* Styling for submit button */
+button{
+    background-color: #333126;
+    color: #F89F0F;
+    padding: 3%;
+    font-size: 2em;
+    margin: 5%;
+    cursor: pointer;
+}
+/* Styling for error messages if validation not met */
+.error{
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
+}
+
+/* Styling for larger devices */
+@media only screen and (min-width: 991px){
+    main{
+        background-position: top;
+        align-items: flex-start;
+    }
+    .form-wrapper{
+       
+        width: 35%;
+        height: 80%;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    
+}
+
+/* Styling for largest devices (desktop) */
+@media only screen and (min-width: 1080px){
+    .content{
+        height: 80%;
+    }
+} 
+.status-message{
+    text-align: center;
+    font-size: 1.5em;;
+}
