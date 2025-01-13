@@ -21,7 +21,7 @@ h1{
     text-align: center;
     margin-bottom: 10px;
 }
-/* Form styling */
+/* Form styling including animation */
 .form-wrapper{
     display: flex;
     background-color: #F89F0F;
@@ -30,6 +30,11 @@ h1{
     margin-bottom: 40px;
     margin-top: 400px;;
     width: 85%;
+    /* animation */
+    position: relative;
+    animation-name: header-title;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 /* Form labels styling */
@@ -94,5 +99,10 @@ button{
 } 
 .status-message{
     text-align: center;
-    font-size: 1.5em;;
+    font-size: 1.5em;
+}
+/* Code controlling animation */
+@keyframes header-title{
+    from{left:500px;}
+    to{left:0px}
 }
