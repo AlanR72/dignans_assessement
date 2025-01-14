@@ -34,8 +34,8 @@ body{
     animation-name: page_instruction;
     animation-duration: 2s;
     animation-timing-function: ease-in;
-    
 }
+
 /* Container div for 'contents of each' clickable box on main page */
 .selection{
     display: flex;
