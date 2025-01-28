@@ -6,6 +6,8 @@ function Nav(){
 
     mobileClick.addEventListener('click',() =>{
         mobileNav.classList.toggle('active');
+        document.getElementById('page_instruction').style.position='static';
+        document.getElementById('page_instruction1').style.position='static';
     });
 }
 Nav()
