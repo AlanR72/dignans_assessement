@@ -39,10 +39,7 @@ main{
     margin-top: 5%;
     border: #f89f0f solid 2px;
     /* animation */
-    position: relative;
-    animation-name: blog-special-offer;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    animation: fadeIn 5s;
 }
 /* Styling for burger prices */
 .blog-special-offer ul, h3{

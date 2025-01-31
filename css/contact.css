@@ -73,6 +73,7 @@ button{
     font-size: 20px;
     text-align: center;
     padding: 3%;
+    
 }
 
 /* Styling for larger devices */
@@ -105,4 +106,9 @@ button{
 @keyframes header-title{
     from{left:500px;}
     to{left:0px}
+}
+/* Code to control opacity of animation on .error class */
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
 }

@@ -80,6 +80,7 @@ a{
 /* Styling to contain navigation list height */
 #mobile-nav{
     height:100%;
+    
 }
 /* Style for navigation hyperlinks */
 #mobile-nav a{
@@ -125,10 +126,7 @@ nav a:hover, .current{
     font-weight: 400;
     font-style: normal;
     /* animation */
-    position: relative;
-    animation-name: header-title;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation: fadeIn 5s;
 }
 /* Container for div with welcome message */
 .message_wrapper{
@@ -296,11 +294,10 @@ footer{
         margin-top: 15px;
     }
 }
-/* Code to animate heading */
-@keyframes header-title{
-    from{left:300px;}
-    to{left:0px}
+
+/* Code to control opacity of animation on heading title */
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
 }
-
-
 

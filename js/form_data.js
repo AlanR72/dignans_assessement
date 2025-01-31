@@ -23,7 +23,8 @@ function validateForm(){
     
     //Validate name
     if(name === ''){
-        document.getElementById('nameError').textContent = 'Name is required!';
+        document.getElementById('nameError').textContent = 'Name is required!!';
+        document.getElementById('nameError').style.animation = 'fadeIn 3s';
         return false;
     }
     
@@ -31,7 +32,8 @@ function validateForm(){
     const namePattern = /^[a-zA-Z ]+$/;
 
     if(!namePattern.test(name)){
-        document.getElementById('nameError').textContent = 'Only letters allowed!';
+        document.getElementById('nameError').textContent = 'Only letters allowed!!';
+        document.getElementById('nameError').style.animation = 'fadeIn 3s';
         return false;
 
     }
@@ -40,7 +42,8 @@ function validateForm(){
     const wordCount = name.trim().split(/\s+/).length;
 
     if(wordCount < 2){
-        document.getElementById('nameError').textContent = 'Name must have at least 2 words';
+        document.getElementById('nameError').textContent = 'Name must have at least 2 words!!';
+        document.getElementById('nameError').style.animation = 'fadeIn 3s';
         return false;
     }
 
@@ -48,7 +51,8 @@ function validateForm(){
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if(!emailRegex.test(email)){
-        document.getElementById('emailError').textContent = 'Invalid email address';
+        document.getElementById('emailError').textContent = 'Invalid email address!!';
+        document.getElementById('emailError').style.animation = 'fadeIn 3s';
         return false;
     }
 
@@ -56,14 +60,16 @@ function validateForm(){
     const telnoPattern = /^[0-9]+$/;
 
     if(!telnoPattern.test(telno)){
-        document.getElementById('telError').textContent = 'Only numbers allowed!';
+        document.getElementById('telError').textContent = 'Only numbers allowed!!';
+        document.getElementById('telError').style.animation = 'fadeIn 3s';
         return false; 
 
     }
 
     //Validate message
     if(message === ''){
-        document.getElementById('messageError').textContent = 'Message is required';
+        document.getElementById('messageError').textContent = 'Message is required!!';
+        document.getElementById('messageError').style.animation = 'fadeIn 3s';
         return false;
     }
     
