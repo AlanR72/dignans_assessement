@@ -31,10 +31,7 @@ h1{
     margin-top: 400px;;
     width: 85%;
     /* animation */
-    position: relative;
-    animation-name: header-title;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation: fadeIn 4s;
 }
 
 /* Form labels styling */
@@ -102,13 +99,9 @@ button{
     text-align: center;
     font-size: 1.5em;
 }
-/* Code controlling animation */
-@keyframes header-title{
-    from{left:500px;}
-    to{left:0px}
-}
-/* Code to control opacity of animation on .error class */
+/* Code to control opacity of animation on form*/
 @keyframes fadeIn{
     0%{opacity:0;}
     100%{opacity:1;}
 }
+
