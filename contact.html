@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Walter+Turncoat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
 </head>
 <body>
@@ -46,7 +46,7 @@
         <!-- Customer advised not secure method of data capture -->
 
         <!-- Form validation executed upon submission by javascript file 'form_data.js' -->
-        <form action="" id="contact-form" class="form-wrapper" onsubmit= "return validateForm()">
+        <form id="contact-form" class="form-wrapper" onsubmit= "return validateForm()">
         
             <h1 class="form-header">CONTACT DIGNANS</h1>
             <!-- Label for input box -->
@@ -77,7 +77,7 @@
 <!--Link to javascript file for toggle of mobile and desktop views-->
 <script defer src="js/main.js"></script>
 <!-- Emailjs link -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <!-- Link to javascript file containing form validation and emailjs script -->
 <script src="js/form_data.js"></script>
 <!--Start of footer section-->
